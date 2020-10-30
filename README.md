@@ -1,5 +1,3 @@
-### ASSIGNMENT 1 README
-
 ## General Problem/Solution
 
 -> Being able to add and search items of Book or Electronics type with no hassle.
