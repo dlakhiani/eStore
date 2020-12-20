@@ -1,12 +1,29 @@
+## Building and Running 
+
+*gradle is required for compilation: use following from root directory*
+
+-> to build, use: gradle build 
+
+-> to run, use: gradle run --args=<fileName>.txt
+    for instance: gradle run --args=storeInput.txt
+-> or, use gradle run.
+
+-> to test, use: gradle test
+
 ## General Problem/Solution
 
--> Being able to add and search items of Book or Electronics type with no hassle.
+-> Being able to add and search Products of Book or Electronics type with no hassle.
 
 ## Assumptions/Limitations
 
+-> The program expects the input.txt and output.txt files to be located in the gradle root directory (i.e, the folder with build, src, README.md, etc).
+    Essentially the directory in which this README.md is in.
+
+-> The inputFile should not have duplicate productIDs and all attributes of respective object must be provided.
+
 -> The program expects numerical values for productID, year(s) and price prompts.
 
--> all prompts will be answered reasonably appropriately, such as for book = b, BOOK (case-insensitive).
+-> All prompts will be answered reasonably appropriately, such as for book = b, BOOK (case-insensitive).
 
 ## User Guide
 
@@ -29,11 +46,4 @@ Book or Electronics - the productID, the description, and the year (on separate 
   
 6) After adding/searching the kind of item, the user will be returned to the first prompt.
 
--> The user can build on the program by recommending features like size of a Book, color of an Electronics product, etc.
-Also, recommending more kinds of items like: stationery, watches, etc.
-
-## Improvements
-
--> Encapsulate a majority of logic solving procedures to a method outside of main().
-
--> Check for letters in user input for numerical prompts, such as year, price, etc.
+-> The TextArea prints "***" to indicate the end of one "search" event (i.e. after every product, exception, etc.)
