@@ -6,6 +6,7 @@
 
 -> to run, use: gradle run --args="fileName".txt
    * for instance: gradle run --args=storeInput.txt
+
 -> or, use gradle run.
 
 -> to test, use: gradle test
